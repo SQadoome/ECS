@@ -1,5 +1,12 @@
 #include "world.hpp"
 
+struct {
+  
+} EntityBundle;
+
+
+int* entities[100];
+
 World::World() {
   
 }

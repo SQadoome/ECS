@@ -3,7 +3,7 @@ OBJS := $(SRCS:.cpp=.o)
 TARGET := ecs.exe
 
 all: $(OBJS)
-	clang++ $(OBJS) -o $(TARGET) -Llib
+	g++ $(OBJS) -o $(TARGET) -L lib -lraylib -lgdi32 -lwinmm
 	ecs.exe
 
 run:
